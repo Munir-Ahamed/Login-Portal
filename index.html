@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Login Portal</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="login_form" id="loginForm">
+            <h3 class="login_header">Login</h3> <br>
+            <p class="error_message" id="errorMessage1"></p>
+            <div class="input">
+                <input class="input_field" id="username1" placeholder="Username" type="text">
+            </div>   
+            <div class="input">
+                <input class="input_field" id="password1" placeholder="Password" type="password">
+            </div>
+            <div class="button">
+                <button class="click_button" id="button1" type="submit">Continue</button>
+            </div>    
+            <a href="#">Forgot your Password?</a>
+            <a href="#" class="create_account" id="createAccount">Don't have an account? Create Account</a>
+        </form>
+
+        <form class="account_form _hidden" id="accountForm">
+            <h3 class="login_header">Create New Account</h3><br>
+            <p class="error_message" id="errorMessage2"></p>
+            <div class="input">
+                <input class="input_field" id="username2" placeholder="Username" type="text">
+            </div> 
+                <p class="error_username_new"></p>
+            <div class="input">
+                <input class="input_field" id="email2" placeholder="Email" type="text">
+            </div>
+                <p class="error_email_new"></p>
+            <div class="input">
+                <input class="input_field" id="password2" placeholder="Password" type="password">
+            </div>
+                <p class="error_new_accnt"></p>
+            <div class="input">
+                <input class="input_field" id="rePassword2" placeholder="Confirm Password" type="password">
+            </div>
+                <p class="error_new_accnt"></p>
+            <div class="button">
+                <button class="click_button" id="button2" type="submit">Continue</button>
+            </div> 
+            <a href="#" id="haveAccount">Already have an account? Sign in.</a>
+        </form>
+        
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
